@@ -1,0 +1,32 @@
+package practice04_participant;
+
+import java.util.*;
+
+class Solution2 {
+	public static String solution(String[] participant, String[] completion) {
+		String answer = "";
+		ArrayList<String> comlist = new ArrayList<>();
+		for (String v : completion) {
+			comlist.add(v);
+		}
+		ArrayList<String> ansarl = new ArrayList<>();
+		for (String v : participant) {
+			System.out.println(v);
+			System.out.println(comlist.contains(v)v);
+			if (!comlist.contains(v)) {
+				ansarl.add(v);
+			}
+		}
+		answer = ansarl.get(0);
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		String[] participant = { "mislay", "stanko", "ana", "mislay" };
+		 //String[] participant = {"marina", "josipa", "nikola", "vinko", "filipa"};
+		String[] completion = { "mislay", "stanko", "ana" };
+		 //String[] completion = {"marina", "josipa", "nikola", "filipa"};
+		System.out.println(solution(participant, completion));
+		// solution(participant, completion);
+	};
+}

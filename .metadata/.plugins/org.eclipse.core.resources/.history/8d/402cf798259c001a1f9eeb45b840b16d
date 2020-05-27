@@ -1,0 +1,43 @@
+package pratice03_buildtower;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+import java.io.IOException;
+
+public class InputTest {
+
+	public static void main(String[] args) {
+		// new InputStreamReader 및 System.in
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		// BufferedReader 객체 생성
+
+		// StringTokenizer 객체 선언
+		StringTokenizer st = null;
+
+		// String Line이므로 Integer.parseInt를 이용하여 형변환해야함
+		int n;
+		try {
+			n = Integer.parseInt(br.readLine());
+		} catch (NumberFormatException | IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		// "1 3 5 7" 식으로 공란 포함 String Line일시 StringTokenizer 이용
+		int[] arrays = new int[n + 1];
+		try {
+			st = new StringTokenizer(br.readLine());
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		for (int i = 1; i <= n; i++) {
+			// 배열에다 토큰을 하나씩 불러서 입력해줌
+			arrays[i] = Integer.parseInt(st.nextToken());
+		}
+		for (int v : a) {
+			System.out.println(v);
+		}
+	}
+}

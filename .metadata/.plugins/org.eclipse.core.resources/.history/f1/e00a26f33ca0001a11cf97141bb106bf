@@ -1,0 +1,13 @@
+package array_practice;
+
+public class BiggestNumber {
+	public static void main(String[] args) {
+		int[] numbers = {3, 30, 34, 5, 9};
+		int length = numbers.length;
+		String[] strArr = new String[length];
+		
+		String str = (String) intx;
+		String joinStr = String.join("", strArr);
+		System.out.println(joinStr);
+	}
+}

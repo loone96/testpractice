@@ -1,0 +1,8 @@
+package array_practice;
+
+public class BiggestNumber {
+	public static void main(String[] args) {
+		String[] strArr = {"aa", "b", "c"};
+		String.join("", strArr);
+	}
+}

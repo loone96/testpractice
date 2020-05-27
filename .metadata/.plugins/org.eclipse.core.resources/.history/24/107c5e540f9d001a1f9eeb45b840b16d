@@ -1,0 +1,17 @@
+package pratice03_buildtower;
+// 문제가 개편 되었습니다. 이로 인해 함수 구성이 변경되어, 과거의 코드는 동작하지 않을 수 있습니다.
+// 새로운 함수 구성을 적용하려면 [코드 초기화] 버튼을 누르세요. 단, [코드 초기화] 버튼을 누르면 작성 중인 코드는 사라집니다.
+public class WaterMelon {
+    public String watermelon(int n){
+
+        return new String(new char [n/2+1]).replace("\0", "수박").substring(0,n);
+    }
+
+    // 실행을 위한 테스트코드입니다.
+    public static void  main(String[] args){
+        WaterMelon wm = new WaterMelon();
+        System.out.println("n이 3인 경우: " + wm.watermelon(3));
+        System.out.println("n이 4인 경우: " + wm.watermelon(4));
+    }
+}
+

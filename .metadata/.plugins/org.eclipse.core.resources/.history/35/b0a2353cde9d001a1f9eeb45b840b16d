@@ -1,0 +1,26 @@
+package practice04_participant;
+
+import java.util.*;
+
+class Solution2 {
+	public static String solution(String[] participant, String[] completion) {
+		String answer = "";
+		HashSet<String> comset = new HashSet<>();
+		for (String v : completion) {
+			comset.add(v);
+		}
+		for (String v : completion) {
+			if (!comset.contains(v))
+		}
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		String[] participant = { "mislay", "stanko", "ana", "mislay" };
+		// String[] participant = {"marina", "josipa", "nikola", "vinko", "filipa"};
+		String[] completion = { "mislay", "stanko", "ana" };
+		// String[] completion = {"marina", "josipa", "nikola", "filipa"};
+		System.out.println(solution(participant, completion));
+		// solution(participant, completion);
+	};
+}

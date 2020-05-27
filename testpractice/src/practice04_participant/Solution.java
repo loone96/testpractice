@@ -1,0 +1,26 @@
+package practice04_participant;
+
+import java.util.*;
+
+class Solution {
+    public String solution(String[] participant, String[] completion) {
+        String answer = "";
+		ArrayList<String> aL = new ArrayList<String>();
+		for (String i : participant) {
+			aL.add(i);
+		}
+		ArrayList<String> bL = new ArrayList<String>();
+		for (String j : completion) {
+			bL.add(j);
+		}
+		HashSet<String> common = new HashSet<>(aL);
+		common.retainAll(bL);
+		HashSet<String> uncommon = new HashSet<>(aL);
+		uncommon.addAll(bL);
+		uncommon.removeAll(common);
+	
+		Object[] obj = uncommon.toArray();
+		answer = (String) obj[0];
+        return answer;
+    }
+}

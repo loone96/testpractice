@@ -1,0 +1,19 @@
+package pratice03_buildtower;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class InputTest {
+
+	public static void main(String[] args) {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		try {
+			String plan = br.readLine();
+		} catch (IOException e) {
+			e.printStackTrace();
+
+		}
+		System.out.println("계획"+plan);
+	}
+}

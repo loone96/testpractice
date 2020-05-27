@@ -1,0 +1,29 @@
+package practice04_participant;
+
+import java.util.*;
+
+class Solution2 {
+	public static String solution(String[] participant, String[] completion) {
+		String answer = "";
+		ArrayList<String> arl = new ArrayList<>();
+		for (String v : participant) {
+			arl.add(v);
+		}
+		System.out.println(arl);
+		HashSet<String> hs2 = new HashSet<String>();
+		for (String v : completion) {
+			hs2.add(v);
+		}
+		arl.removeAll(hs2);
+		Object[] anslist = hs.toArray();
+		answer = (String) anslist[0];
+		return answer;
+	}
+
+	public static void main(String[] args) {
+		String[] participant = { "mislay", "stanko", "ana", "mislay" };
+		String[] completion = { "mislay", "stanko", "ana" };
+		System.out.println(solution(participant, completion));
+		// solution(participant, completion);
+	};
+}
